@@ -1,0 +1,34 @@
+Instructions to run this code
+
+Install REDIS and MONGODB
+
+Start REDIS server:
+Make sure you are in the existing path where redis-server is installed
+
+"Himanshus-MacBook-Pro:redis-5.0.0 hg$ src/redis-server"
+
+Start MongoDB:
+for Macbook
+"Himanshus-MacBook-Pro:data hg$ sudo mongod"
+
+for windows:
+"net start MongoDB"
+
+Start the message board application:
+"python3 message-boards.py"
+
+Now following commands can be issued:
+
+"select <MESSAGE BOARD>" : This will either create a new message board or select the already existing one
+
+"read": Display the existing messages on the board
+
+"write <Message>" : This will send a message on the board and also to all listening users
+
+"listen" : This will subscribe to the selected message board
+
+"quit" : To quit the application
+
+To stop receiving updates from listen mode, press "CTRL + C"
+
+
